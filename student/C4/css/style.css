@@ -14,6 +14,9 @@ body, header, nav, main, footer {
     border: 0;
     font-family: sans-serif;
 }
+
+
+
 /* add margin to specified elements */
 
 header, main, footer {
@@ -44,7 +47,7 @@ li.nav-list {
 }
 li.nav-list a {
     color: rgb(218, 218, 218);
-    font-weight: 100;
+    font-weight: bold;
     text-decoration: none;
 }
 li.nav-list:hover{
@@ -80,4 +83,17 @@ header {
     margin: 2%;
     margin-left: 0;
     width: 30%;
+}
+
+
+/* phone design */
+
+@media screen and (max-width: 600px) {
+
+
+    /* navbar for mobile */
+    nav ul li {
+        display: table-column;
+    }
+
 }
