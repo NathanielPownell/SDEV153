@@ -6,13 +6,16 @@
   Date: 01/31/2021 
 */
 
+/* Css import for google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap');
+
 /* css reset styling */
 
 body, header, nav, main, footer {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: sans-serif;
 }
 
 
@@ -25,20 +28,17 @@ header, main, footer {
 /* navbar styling */
 nav {
 }
-ul.nav-list {
+nav ul {
     width: 100%;
     margin-top:0;
     display: inline-flex;
-    align-content: space-between;
-    list-style: none;
+    flex-direction: row;
+    list-style-type: none;
     padding: 0;
 }
 li.nav-list {
     text-align: center;
-    width: 100%;
-    align-content: space-between;
-    background: linear-gradient(rgb(82, 82, 82),rgb(43, 43, 43));
-    display: inline;
+    background-color: rgb(2, 31, 13);
     padding-left: 5%;    
     padding-right: 5%;
     padding-top: .8%;
@@ -46,8 +46,9 @@ li.nav-list {
 
 }
 li.nav-list a {
+    font-family: "Roboto", sans-serif;
     color: rgb(218, 218, 218);
-    font-weight: bold;
+    font-weight: lighter;
     text-decoration: none;
 }
 li.nav-list:hover{
@@ -58,6 +59,7 @@ li.nav-list:hover{
 /* image styling */
 
 img {
+    border-radius: 6px;
     max-width: 100%;
     display: block;
 }
@@ -70,7 +72,12 @@ h1.logo {
 }
 h3 {
     color: rgb(120, 155, 120);
+    font-family: "Pangolin", cursive ;
 
+}
+
+main {
+    font-family: "Roboto", sans-serif;
 }
 
 /* header styling */
@@ -92,8 +99,23 @@ header {
 
 
     /* navbar for mobile */
-    nav ul li {
-        display: table-column;
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li.nav-list {
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    nav ul li a {
+        font-size: 1.4em;
+    }
+
+    .desktop {
+        display: none;
     }
 
 }
