@@ -1,0 +1,128 @@
+/* 
+Nathaniel Pownell
+styles.css
+02/05/2021 
+*/
+
+/* google font imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* CSS RESET */
+
+*{
+  font-family: sans-serif;
+}
+
+header, body, nav, footer {
+	padding: 0;
+	margin: 0;
+	}
+/* Image styling */
+img {
+  max-width: 100%;
+  display: block;
+}
+/*header styling*/
+
+header {
+  color: #2a333d;
+  padding: 3%;
+  background-color: rgba(202, 217, 232, .8);
+}
+
+h1 {
+  font-family: 'Audiowide', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+h3 {
+  color: rgba(202, 217, 232, .8);
+}
+
+/* body styling */
+
+body {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%232b3b4d' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+p {
+  color: rgba(202, 217, 232, .8);
+}
+
+/* NAV styling */
+
+nav {
+  background-color: rgba(202, 217, 232, .8);
+  margin: 0;
+
+}
+
+nav ul {
+  justify-content: space-between;
+  /* display: flex; */
+  margin: 0;
+  padding-left: 0;
+  width: 100%;
+
+}
+
+nav ul li {
+  display: inline-flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
+
+}
+
+nav ul li a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #020409;
+  border-bottom: solid rgba(202, 217, 232, .0);
+}
+
+nav ul li a:hover {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #4d4f53;
+  border-bottom: solid 1px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/*Footer styling*/
+
+footer {
+  text-align: center;
+  color: rgba(202, 217, 232, .8);
+}
+footer a {
+  text-align: center;
+  text-decoration: none;
+  color: rgba(202, 217, 232, .8);
+}
+
+@media screen and (max-width:470px) {
+
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+}
