@@ -110,13 +110,17 @@ footer a {
   color: rgba(202, 217, 232, .8);
 }
 
-@media screen and (max-width:470px) {
+/* phone */
+
+@media screen and (max-width:620px) {
 
   nav ul li {
     display: flex;
     flex-direction: column;
   }
-
+  body {
+    background-image: none;
+  }
   nav ul li a {
     font-size: 1.5em;
   }
@@ -124,5 +128,16 @@ footer a {
   h1 {
     font-size: 2em;
   }
+
+}
+
+/* Style rules for tablet */
+
+@media screen and (min-width:620px) {
+
+  nav ul li a {
+    font-size: 2em;
+  }
+
 
 }
