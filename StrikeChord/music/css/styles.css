@@ -5,7 +5,7 @@ Date: 02/04/2021
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, ul, main, footer, img, h1 {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,22 +17,50 @@ img {
     display: block;
 }
 
+/* Style rules for mobile viewport */
+
+
+/* Hide tab-desk class */
+
+.tab-desk {
+  display: none;
+}
+
 /* Style rules for header content */
 header {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
     color: #373684;
 }
  
 header h1 {
-    font-style: italic;
+  font-family: "DM Serif Display", serif;
 }
+
+/* Style Rules for Nav */
+nav li {
+  text-align: center;
+  display: block;
+  list-style-type: none;
+  border-top: 1px solid #e5e9fc;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #373684;
+}
+nav li a {
+  color:#e5e9fc;
+  text-decoration: none;
+  /* font-family: "Roboto" serif; */
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
 /* Style rules for main content */
 main {
     padding: 2%;
     background-color: #e5e9fc;
     overflow: auto;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
  
 main p {
@@ -40,14 +68,13 @@ main p {
 }
  
 .action {
-    font-size: 1.75em;
+    font-size: 1.25em;
     color: #373684; 
     font-weight: bold;
 }
 
 #piano, #guitar, #violin {
-     width: 29%;
-     float: left;
+
      margin: 0 2%;
 }
  
@@ -57,11 +84,32 @@ main p {
     padding: 1% 2%;
 }
 
+#info ul {
+  margin-left: 10%;
+}
+
+.round {
+  border-radius: 8px;
+}
+
 #contact {
     text-align: center;
 }
- 
-#contact a {
+.tel-link {
+    background-color: #373684;
+        padding: 2%;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        border-radius: 5px;
+} 
+.tel-link a {
+    color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+        display: block;
+}
+#contact .email-link {
     color: #4645a8;
     text-decoration: none;
     font-weight: bold;
@@ -69,6 +117,8 @@ main p {
  
 .map {
     border: 5px solid #373684;
+    width: 95%;
+    height: 50%;
 }
 
 /* Style rules for footer content */
