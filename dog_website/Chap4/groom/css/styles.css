@@ -23,20 +23,30 @@ img {
 
 header {
   color: #3e2f1b;
-  padding: 3%;
+  
 }
 
 h1 {
+  padding: 3%;
+  font-size: 3em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
 }
-
+h5 {
+  display: none;
+  top: 0;
+  padding: 3%;
+}
 /* body styling */
 
 body {
   background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.2"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
 }
 
+
+p {
+  font-size: 2em;
+}
 /* NAV styling */
 
 nav {
@@ -45,22 +55,23 @@ nav {
 }
 
 nav ul {
-  justify-content: space-between;
-  display: flex;
-
+  padding-left: 0;
 }
 
 nav ul li {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding-top: 1%;
   padding-bottom: 1%;
 
 }
 
 nav ul li a {
+  font-size: 3em;
   text-align: center;
   text-decoration: none;
   color: #020409;
+  border-bottom: solid 2px #3e2f1b00; 
 }
 
 /*Footer styling*/
@@ -68,4 +79,68 @@ nav ul li a {
 footer {
   text-align: center;
   color: #3e2f1b;
+}
+
+/* MEDIA QUERIES */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+
+/* tablets ----------- */
+@media only screen 
+and (min-device-width : 768px) {
+/* Styles */
+h5 {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  display: inline-flex;
+  flex-direction: row;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+nav ul li a {
+  font-size: 1.5em;
+  
+}
+nav ul li a:hover {
+  border-bottom: solid 2px #3e2f1b;  
+}
+p {
+  font-size: 1em;
+}
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+h1, h5 {
+  margin: 0;
+  margin-top: 2%;
+  padding-top: .2%;
+  padding-bottom: .2%;
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+body {
+background-image: none;
+background: linear-gradient(#fff, rgb(121, 155, 121) )
+}
+
 }
