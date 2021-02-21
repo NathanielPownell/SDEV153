@@ -70,6 +70,10 @@ h1.logo {
     font-family:  'Arial Narrow Bold', sans-serif;
     color: rgb(147, 255, 147);
 }
+
+h2 {
+  text-shadow: 5px 5px 15px #000000;
+}
 h3 {
     color: rgb(120, 155, 120);
     font-family: "Pangolin", cursive ;
@@ -94,17 +98,24 @@ header {
 
 #hero {
   display: none;
+  opacity: .6;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 body {
 background: linear-gradient(0deg, rgba(71,108,75,1) 0%, rgba(210,247,217,1) 100%);
 }
 
-.column {
-  float: left;
-  width: 48%;
-  padding: 3px;
+.banner {
+  color: rgb(0, 43, 9);
+  background-color: rgb(158, 184, 97);
+  border-radius: 1em;
 }
+.banner h2 {
+  text-shadow: none;
+
+}
+
 
 /* phone design */
 
